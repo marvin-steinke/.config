@@ -19,6 +19,7 @@ export FZF_ALT_C_COMMAND="fd \
 export LC_ALL=en_US.UTF-8
 export HISTFILE="$HOME/.config/zsh/.zsh_history"
 export LESSHISTFILE=-
+export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
 
 # theme and color
 eval "$(dircolors $HOME/.config/zsh/dircolors.gruvbox)"
