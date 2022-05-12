@@ -1,0 +1,14 @@
+### input configuration
+
+input type:keyboard {
+    repeat_rate 40
+    repeat_delay 300
+    xkb_layout de
+    xkb_options caps:swapescape
+}
+
+input type:touchpad {
+    scroll_factor 0.3
+    tap enabled
+    natural_scroll enabled
+}

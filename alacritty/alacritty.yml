@@ -1,0 +1,31 @@
+colors:
+  primary:
+    foreground: '#ebdbb2'
+    hard contrast: background = '#1d2021'
+    normal:
+      black: '#282828'
+      blue: '#458588'
+      bright:
+        black: '#928374'
+        blue: '#83a598'
+        cyan: '#8ec07c'
+        green: '#b8bb26'
+        magenta: '#d3869b'
+        red: '#fb4934'
+        white: '#ebdbb2'
+        yellow: '#fabd2f'
+      cyan: '#689d6a'
+      green: '#98971a'
+      magenta: '#b16286'
+      red: '#cc241d'
+      white: '#a89984'
+      yellow: '#d79921'
+font:
+  normal:
+    family: hack
+  size: 12.0
+key_bindings:
+  - {key: Return, mods: Control, action: SpawnNewInstance}
+  - {key: R, mode: ~Alt, mods: Control, action: Paste}
+  - {key: Space, mode: ~Alt, mods: Control, action: ToggleViMode}
+  - {key: Escape, mode: Vi|~Search, action: ToggleViMode}

@@ -1,0 +1,22 @@
+# bg
+exec pacwall -ug
+exec watch -n 600 pacwall
+
+# start on ws
+assign [app_id="firefox"] 8
+assign [app_id="telegram"] 9
+
+# notifications
+exec mako
+exec batsignal -b
+
+# auto usb mounting
+exec udiskie
+
+# lock on lid close
+bindswitch --reload --locked lid:on exec swaylock
+
+# fix stupid wayland gtk bug
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+         dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK

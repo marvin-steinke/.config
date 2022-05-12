@@ -1,0 +1,24 @@
+window {
+  border: 1px solid #ebdbb2;
+}
+
+#input {
+  margin-bottom: 2px;
+  border: 1px solid #1d2021;
+  background-color: #1d2021;
+}
+
+#inner-box {
+  margin: 2px;
+  background-color: #1d2021;
+}
+
+#outer-box {
+  margin: 2px;
+  border: 2px solid #1d2021;
+  background-color: #1d2021;
+}
+
+#text {
+  color: #ebdbb2;
+}

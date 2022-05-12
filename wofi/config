@@ -1,0 +1,11 @@
+show=drun
+height=500
+width=500
+term=alacritty
+insensitive=true
+allow_images=false
+allow_markup=true
+no_actions=true
+hide_scroll=true
+key_up=Control_L-k
+key_down=Control_L-j

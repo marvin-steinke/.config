@@ -1,0 +1,31 @@
+### Apperance:
+
+# Border settings
+smart_borders on
+default_border pixel 1
+default_floating_border pixel 1
+
+# Titlebar font
+font hack 10
+#
+### Gruvbox
+set $light #ebdbb2
+set $dark #282828
+set $focusedborder #ebdbb2
+set $inactiveborder #1d2021
+set $unfocusedborder #1d2021
+set $urgentborder #cc241d
+set $indicator #83a598
+
+### Colors (see man 5 sway)
+# border - border around titlebar
+# bg - titlebar background
+# text - text on titlebar
+# indicator - shown where new window will open
+# child_border - border around the window
+# class			border			bg			text	indicator		child_border
+client.focused          $focusedborder		$focusedborder		$dark	$indicator		$focusedborder
+client.focused_inactive $inactiveborder		$inactiveborder		$dark	$inactiveborder		$inactiveborder
+client.unfocused        $unfocusedborder	$unfocusedborder	$light	$unfocusedborder	$unfocusedborder
+client.urgent           $urgentborder		$urgentborder		$light	$urgentborder		$urgentborder
+

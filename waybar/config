@@ -1,0 +1,69 @@
+{
+    "layer": "top",
+    "position": "top",
+
+    "modules-left": [
+        "sway/workspaces",
+    ],
+
+    "modules-center": [
+        "clock",
+    ],
+
+    "modules-right": [
+        "network",
+        "backlight",
+        "pulseaudio",
+        "battery",
+    ],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "format": "{name}"
+    },
+
+    "sway/window": {
+        "max-length": 50
+    },
+
+    "clock": {
+        "format": "{: %H:%M %d.%m }",
+        "tooltip": false
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "L: {percent}%",
+        "format-off": "L: off",
+        "states": {
+            "on": 1,
+            "off": 0
+        },
+    },
+
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "{ifname}: {essid}",
+        "format-ethernet": "Ethernet",
+        "format-disconnected": "disconnected",
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "Vol: {volume:2}%",
+        "format-muted": "Vol: muted",
+        "scroll-step": 0,
+        "tooltip": false
+    },
+
+    "battery": {
+        "states": {
+            "good": 100,
+            "warning": 30,
+            "critical": 10
+        },
+        "format": "Bat: {capacity}%",
+        "format-charging": "AC: {capacity}%",
+        "tooltip": false
+    }
+}
