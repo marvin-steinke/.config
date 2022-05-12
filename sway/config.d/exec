@@ -2,6 +2,9 @@
 exec pacwall -ug
 exec watch -n 600 pacwall
 
+# alternating layout
+exec_always autotiling
+
 # start on ws
 assign [app_id="firefox"] 8
 assign [app_id="telegram"] 9
