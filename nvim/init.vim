@@ -78,8 +78,6 @@ nnoremap x "_x
 nnoremap X "_x
 imap <C-r> <C-r>+
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-nnoremap gq{ {V}gq2<C-o>
-nnoremap gq} {V}gq2<C-o>
 nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
 nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
 
