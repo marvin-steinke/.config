@@ -87,9 +87,9 @@ nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
 inoremap { {}<ESC>i
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
-inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
 
+" tex
 autocmd BufNewFile,BufRead *.lco setlocal filetype=tex
 let g:tex_flavor = "latex"
 let g:vimtex_compiler_latexmk = {
