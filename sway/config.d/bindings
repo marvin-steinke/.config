@@ -8,12 +8,12 @@ include ~/.config/sway/config.d/vars
     bindsym $mod+F4 exec poweroff
 
     # switch output
-    bindsym Home output eDP-1 disable; exec /home/marvin/.scripts/font1
-    bindsym End output eDP-1 enable; exec /home/marvin/.scripts/font0
+    bindsym Home output eDP-1 disable; exec $HOME/.scripts/font1
+    bindsym End output eDP-1 enable; exec $HOME/.scripts/font0
 
     # Brightess control
-    bindsym XF86MonBrightnessDown exec light -U 5
-    bindsym XF86MonBrightnessUp exec light -A 5
+    bindsym XF86MonBrightnessDown exec $HOME/.scripts/lightd
+    bindsym XF86MonBrightnessUp exec $HOME/.scripts/lightu
 
     # Volume control
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
