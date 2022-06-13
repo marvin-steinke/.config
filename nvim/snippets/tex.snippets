@@ -85,13 +85,13 @@ snippet brief
 
 	\\begin{letter}{
 	% ===== Zielanschrift =====
-	${1:Empfänger}\\\\
-	${2:Empfängerstraße 12}\\\\
-	${3:12345 Empfängerort}
+	${1:Empfänger\\\\
+	Empfängerstraße 12\\\\
+	12345 Empfängerort\\\\}
 	% =========================
 	}
 
-	${4}\\printstamp[/home/marvin/Downloads/stamp.pdf]
+	%${2}\\printstamp[/home/marvin/Downloads/stamp.pdf]
 
 	% ======= Geschäftszeichenzeile =========
 	\\setkomavar{yourref}{}          % Ihr Zeichen
@@ -103,13 +103,13 @@ snippet brief
 	\\setkomavar{date}{\\today}       % Datum
 	% =======================================
 
-	\\setkomavar{subject}{${5:Betreff}}
+	\\setkomavar{subject}{${3:Betreff}}
 
 	\\opening{Sehr geehrte Damen und Herren,}
 
 	${0}
 
-	${6}\\signature{/home/marvin/Documents/Vorlage/Unterschrift.jpg}
+	%\\signature{/home/marvin/Documents/Vorlage/Unterschrift.jpg}
 
 	\\closing{Mit freundlichen Grüßen}
 
