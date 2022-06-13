@@ -2,12 +2,17 @@
 exec pacwall -ug
 exec watch -n 600 pacwall
 
-# alternating layout
-exec_always autotiling
-
-# start on ws
+for_window [app_id="com.nextcloud.desktopclient.nextcloud"] {
+    floating enable
+}
+for_window [app_id="org.keepassxc.KeePassXC"] {
+    floating enable
+    move scratchpad
+    scratchpad show
+}
 assign [app_id="firefox"] 8
 assign [app_id="telegram"] 9
+assign [title="Signal"] 9
 
 # notifications
 exec mako
